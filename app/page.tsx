@@ -178,12 +178,6 @@ export default function Page() {
 
           <div className="flex items-center gap-2">
             <a
-              href="#waitlist"
-              className="hidden rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-700 shadow-sm hover:bg-neutral-50 sm:inline-flex"
-            >
-              Join waitlist
-            </a>
-            <a
               href="#demo"
               className="inline-flex rounded-xl bg-neutral-900 px-3 py-2 text-sm text-white shadow-sm hover:bg-neutral-800"
             >
@@ -195,117 +189,87 @@ export default function Page() {
 
 
 
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(0,0,0,0.05),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(0,0,0,0.04),transparent_40%)]" />
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:py-20">
-          <div className="relative">
-            <div className="flex flex-wrap gap-2">
-              <Pill>Built for M&A / DD</Pill>
-              <Pill>Conclusion-first answers</Pill>
-              <Pill>Document-grounded</Pill>
-            </div>
 
-            <h1 className="mt-6 text-4xl font-semibold tracking-tight sm:text-5xl">
-              NEX — Your AI Deal Analyst
-            </h1>
+{/* Hero */}
+{/* Hero */}
+<section className="relative overflow-hidden">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(0,0,0,0.05),transparent_60%)]" />
 
-            <p className="mt-4 max-w-xl text-base leading-7 text-neutral-600">
-Built on GPT-5.2, NEX is an AI Deal Analyst designed to operate at the VP / Manager level, supporting you throughout the M&A deal cycle. 
-            </p>
+  <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 pt-6 pb-14 sm:px-6 lg:grid-cols-2 lg:pt-8 lg:pb-20 lg:items-stretch">
+    {/* Left */}
+    <div className="relative flex h-full flex-col">
+      {/* Pills */}
+      <div className="flex flex-wrap gap-2">
+        <Pill>#DealNativeAI</Pill>
+        <Pill>#AlwaysInContext</Pill>
+        <Pill>#NoPromptBabysitting</Pill>
+      </div>
 
-            <p className="mt-4 max-w-xl text-base leading-7 text-neutral-600">
-Unlike generic assistants such as ChatGPT or Copilot, NEX works with the deal materials you choose to bring into the discussion — including financial models, decks, documents, meeting minutes, and URLs — and maintains conversational context across them. NEX helps pressure-test conclusions and deal ideas, verify whether the materials and facts actually support what you’re about to say, and surface gaps, inconsistencies, or boundary conditions that are easy to miss — before conclusions or ideas are shared, formalized, or taken elsewhere.
-            </p>
+      {/* Headline */}
+      <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+        NEX thinks through your deal with you, end to end — as a steady counterpart
+      </h1>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#demo"
-                className="inline-flex items-center justify-center rounded-2xl bg-neutral-900 px-5 py-3 text-sm text-white shadow-sm hover:bg-neutral-800"
-              >
-                Request a demo
-              </a>
-              <a
-                href="#waitlist"
-                className="inline-flex items-center justify-center rounded-2xl border border-neutral-200 bg-white px-5 py-3 text-sm text-neutral-700 shadow-sm hover:bg-neutral-50"
-              >
-                Join the waitlist
-              </a>
-            </div>
+      {/* What it does */}
+      <div className="mt-5 max-w-md rounded-2xl border border-neutral-200 bg-white/60 p-4 text-sm text-neutral-700 backdrop-blur">
+        <ul className="space-y-2">
+          <li>• Keeps full deal context</li>
+          <li>• Pressure-tests your thinking</li>
+          <li>• Provides output for your documents</li>
+        </ul>
+      </div>
 
-            <div className="mt-6 grid max-w-xl grid-cols-1 gap-3 sm:grid-cols-3">
-              <div className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-                <div className="text-xs text-neutral-500">Default output</div>
-                <div className="mt-1 text-sm font-medium">Yes/No first</div>
-              </div>
-              <div className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-                <div className="text-xs text-neutral-500">Reasoning</div>
-                <div className="mt-1 text-sm font-medium">Max 3 points</div>
-              </div>
-              <div className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-                <div className="text-xs text-neutral-500">When insufficient</div>
-                <div className="mt-1 text-sm font-medium">What’s missing</div>
-              </div>
-            </div>
+      {/* Push CTA to bottom of left column */}
+      <div className="flex-1" />
 
-            <div className="mt-8">
-            </div>
-          </div>
+      {/* CTA */}
+      <div className="mt-8">
+        <a
+          href="#demo"
+          className="inline-flex items-center justify-center rounded-2xl bg-neutral-900 px-5 py-3 text-sm text-white shadow-sm hover:bg-neutral-800"
+        >
+          Request a demo
+        </a>
+      </div>
+    </div>
 
-          <div className="relative">
-<img
-  src="/lp-hero.jpg"
-  alt="NEX hero visual"
-  className="w-full h-full object-cover rounded-2xl"
-/>
+    {/* Right */}
+    <div className="relative flex h-full items-end">
+      <img
+        src="/lp-hero.jpg"
+        alt="NEX hero visual"
+        className="h-auto w-full rounded-2xl object-cover"
+      />
+    </div>
+  </div>
+</section>
 
-            <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              <div className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-                <div className="text-xs text-neutral-500">Example output</div>
-                <div className="mt-2 text-sm font-medium text-neutral-900">Conclusion: Approve</div>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-600">
-                  <li>Revenue quality supports base case</li>
-                  <li>Customer concentration acceptable</li>
-                  <li>No blocking legal red flags found</li>
-                </ul>
-              </div>
-              <div className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-                <div className="text-xs text-neutral-500">If materials are insufficient</div>
-                <div className="mt-2 text-sm font-medium text-neutral-900">Cannot conclude</div>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-600">
-                  <li>What can be concluded vs not</li>
-                  <li>List missing inputs (max 3)</li>
-                  <li>Proceed without stalling</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
 
       {/* Problem */}
       <section className="border-t border-neutral-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <SectionTitle
-            kicker="Problem"
-            title="Deal risk isn’t lack of data. It’s lack of judgment."
-            desc="You’re drowning in materials. The cost is not reading. It’s deciding late, or deciding blind."
+            kicker="WHAT"
+            title="NEX is a context-aware AI assistant designed for deal work"
+            desc=""
           />
 
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
             <Card
-              title="Too much material"
-              desc="IM, financials, contracts, data rooms — time doesn’t scale with volume."
+              title="No need to babysit every time"
+              desc="NEX works differently than ChatGPT/Copilot. Based on the deal materials you choose to bring into the discussion — including financial models, docs, minutes, and URLs — NEX maintains context across them. No need to babysit your AI every single time you open a chat session"
               icon={<Icon name="doc" />}
             />
             <Card
-              title="Summaries don’t decide"
-              desc="Analysts summarize. The decision still rests on you — under time pressure."
+              title="UI optimized for M&A work"
+              desc="Because your deal context is always maintained, there is no longer the need to switch chat sessions back and forth. One chat area with your recent chat + memory cards stacked in the back in case you need reference to a past conversation"
               icon={<Icon name="target" />}
             />
             <Card
-              title="Chatbots don’t conclude"
-              desc="They explain. They hedge. They avoid responsibility. You need clarity, not prose."
+              title="Best assistant to test things first"
+              desc="Having been built on GPT-5.2, NEX is estimated to operate at the VP / Manager level. NEX answers any general or speciifc questions for your deal and pressure-test conclusions and ideas  — before conclusions or ideas are shared, formalized, or taken elsewhere"
               icon={<Icon name="bolt" />}
             />
           </div>
@@ -316,7 +280,7 @@ Unlike generic assistants such as ChatGPT or Copilot, NEX works with the deal ma
       <section id="why" className="border-t border-neutral-200 bg-neutral-50">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <SectionTitle
-            kicker="Why NEX"
+            kicker="WHY"
             title="NEX stands next to your decision — not in place of it."
             desc="Professional tone, decisive defaults, and strict separation between document facts and interpretation."
           />
@@ -382,7 +346,7 @@ Unlike generic assistants such as ChatGPT or Copilot, NEX works with the deal ma
       <section id="how" className="border-t border-neutral-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <SectionTitle
-            kicker="How it works"
+            kicker="HOW"
             title="Three steps. No ceremony."
             desc="Keep it simple. Make it repeatable."
           />
@@ -435,43 +399,12 @@ Unlike generic assistants such as ChatGPT or Copilot, NEX works with the deal ma
 />
 
 
-
-
-      {/* Use cases */}
-      <section id="use-cases" className="border-t border-neutral-200 bg-neutral-50">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <SectionTitle
-            kicker="Use cases"
-            title="Designed for real deal workflows"
-            desc="Pick a few that match your buyers. Keep it tight."
-          />
-
-          <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
-            <Card
-              title="Pre-LOI risk screening"
-              desc="Quickly surface what blocks a deal before time and credibility are spent."
-              icon={<Icon name="target" />}
-            />
-            <Card
-              title="DD red-flag review"
-              desc="Extract decisive, document-grounded red flags from dense materials."
-              icon={<Icon name="doc" />}
-            />
-            <Card
-              title="IC prep"
-              desc="Turn data room chaos into a clear recommendation with explicit assumptions."
-              icon={<Icon name="shield" />}
-            />
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="border-t border-neutral-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
             <div>
-              <div className="text-xs uppercase tracking-widest text-neutral-500">Call to action</div>
+              <div className="text-xs uppercase tracking-widest text-neutral-500"></div>
               <h3 className="mt-3 text-3xl font-semibold tracking-tight text-neutral-900">
                 Decisions don’t need more words. They need clarity.
               </h3>

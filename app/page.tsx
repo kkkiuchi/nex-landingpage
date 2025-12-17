@@ -211,8 +211,10 @@ export default function Page() {
             </h1>
 
             <p className="mt-4 max-w-xl text-base leading-7 text-neutral-600">
-              Make faster, defensible decisions before you commit. No chatty explanations by default.
-              Clear conclusion first, reasons second.
+             Built on GPT-5.2, NEX is an AI Deal Analyst designed to operate at the VP / Manager level, supporting you throughout the M&A deal cycle.
+Unlike generic assistants such as ChatGPT or Copilot, NEX works with the deal materials you choose to bring into the discussion — including financial models, decks, documents, meeting minutes, and URLs — and maintains conversational context across them.
+
+NEX helps pressure-test conclusions and deal ideas, verify whether the materials and facts actually support what you’re about to say, and surface gaps, inconsistencies, or boundary conditions that are easy to miss — before conclusions or ideas are shared, formalized, or taken elsewhere.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

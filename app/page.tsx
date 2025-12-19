@@ -165,7 +165,6 @@ export default function Page() {
               <span className="text-sm font-semibold">NEX</span>
             </div>
             <div className="leading-tight">
-              <div className="text-sm font-medium">NEX</div>
               <div className="text-xs text-neutral-500">AI Deal Analyst</div>
             </div>
           </div>
@@ -205,7 +204,7 @@ export default function Page() {
       <div className="flex flex-wrap gap-2">
         <Pill>#DealNativeAI</Pill>
         <Pill>#AlwaysInContext</Pill>
-        <Pill>#NoPromptBabysitting</Pill>
+        <Pill>#NoAIBabysitting</Pill>
       </div>
 
       {/* Headline */}
@@ -225,15 +224,7 @@ export default function Page() {
       {/* Push CTA to bottom of left column */}
       <div className="flex-1" />
 
-      {/* CTA */}
-      <div className="mt-8">
-        <a
-          href="#demo"
-          className="inline-flex items-center justify-center rounded-2xl bg-neutral-900 px-5 py-3 text-sm text-white shadow-sm hover:bg-neutral-800"
-        >
-          Request a demo
-        </a>
-      </div>
+
     </div>
 
     {/* Right */}
@@ -255,26 +246,55 @@ export default function Page() {
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <SectionTitle
             kicker="WHAT"
-            title="NEX is a context-aware AI assistant designed for deal work"
+            title="AI assistant who stays in context"
             desc=""
           />
 
-          <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
-            <Card
-              title="No need to babysit every time"
-              desc="NEX works differently than ChatGPT/Copilot. Based on the materials you choose to bring in — including models, docs, minutes, and URLs — NEX maintains context across them. No need to babysit your AI every single time"
-              icon={<Icon name="doc" />}
-            />
-            <Card
-              title="UI optimized for M&A work"
-              desc="Because your deal context is always maintained, there is no longer the need to switch chat sessions back and forth. One chat area with your recent chat + memory cards stacked in the back in case you need reference to a past conversation"
-              icon={<Icon name="target" />}
-            />
-            <Card
-              title="Best assistant to test things first"
-              desc="Having been built on GPT-5.2, NEX is estimated to operate at the VP / Manager level. NEX answers any questions for your deal and pressure-test conclusions and ideas  — before conclusions or ideas are taken elsewhere"
-              icon={<Icon name="bolt" />}
-            />
+          <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3 items-stretch">
+            {/* Card 1 */}
+            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm flex flex-col h-full">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
+                  <Icon name="doc" />
+                </div>
+                <div className="text-base font-medium text-neutral-900 line-clamp-2">
+                  No need to babysit AI every time
+                </div>
+              </div>
+              <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
+                NEX works differently than ChatGPT/Copilot. Based on the materials you bring in — models, docs, minutes, and URLs — it keeps context across them.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm flex flex-col h-full">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
+                  <Icon name="target" />
+                </div>
+                <div className="text-base font-medium text-neutral-900 line-clamp-2">
+                  One workspace, not scattered chats
+                </div>
+              </div>
+              <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
+                With deal context maintained, there’s no need to switch sessions back and forth. Your recent work stays visible, with past context available when needed.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm flex flex-col h-full">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
+                  <Icon name="bolt" />
+                </div>
+                <div className="text-base font-medium text-neutral-900 line-clamp-2">
+                  Pressure-test ideas before they travel
+                </div>
+              </div>
+              <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
+                Ask deal questions and test conclusions early. NEX helps you pressure-test reasoning before it’s taken into docs, meetings, or recommendations.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -284,66 +304,69 @@ export default function Page() {
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <SectionTitle
             kicker="WHY"
-            title="NEX takes off the cognitive load off you"
+            title="NEX takes off the cognitive load"
             desc=""
           />
 
-          <div className="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3">
-            <Card
-              title="Let's face it, producing output while keeping in mind all the context drains the mind"
-              desc="M&A deliverables are not just about writing slides or documents. Each piece of work requires holding deal-specific assumptions, stakeholder positions, incentives, and unresolved questions at the same time. The effort is not mechanical — it is cognitive — and that load compounds late at night when decisions still need to be made."
-              icon={<Icon name="bolt" />}
-            />
-            <Card
-              title="The same strain extends into thinking, analysis and decision making"
-              desc="The burden of holding onto context does not stop at documentation. It carries over into issue spotting, option generation, and decision support, where the same context must be preserved across conversations and iterations. As multiple deals run in parallel, the cost of keeping everything aligned increases rapidly, even for experienced teams."
-              icon={<Icon name="shield" />}
-            />
-            <Card
-              title="In practice, thinking often happens without, or little time with, a real human counterpart"
-              desc="Team structure and capability vary, but workload is a constant constraint. Sometimes responsibility concentrates on one experienced member. In other cases, capable teams are simply stretched thin across many deals. In both situations, there are frequent moments where meaningful back-and-forth is unavailable — and thinking proceeds without a true counterpart."
-              icon={<Icon name="target" />}
-            />
-          </div>
-
-          <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
+          <div className="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3 items-stretch">
+            
+            {/* WHY Card 1 */}
+            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm flex flex-col h-full">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
-                  <Icon name="compare" />
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
+                  <Icon name="bolt" />
                 </div>
-                <div className="text-base font-medium text-neutral-900">Typical AI vs NEX</div>
-              </div>
-
-              <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-5">
-                  <div className="text-sm font-medium text-neutral-900">Typical AI</div>
-                  <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-600">
-                    <li>Long explanations</li>
-                    <li>Vague language</li>
-                    <li>Avoids conclusions</li>
-                  </ul>
-                </div>
-                <div className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-                  <div className="text-sm font-medium text-neutral-900">NEX</div>
-                  <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-600">
-                    <li>Conclusion first</li>
-                    <li>Max three reasons</li>
-                    <li>States what’s missing</li>
-                  </ul>
+                <div className="text-base font-medium text-neutral-900 line-clamp-2">
+                  Holding context is mentally expensive
                 </div>
               </div>
+              <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
+                M&A deliverables are not just about writing slides or documents.
+                Each piece of work requires holding assumptions, stakeholder positions,
+                incentives, and unresolved questions at the same time.
+              </p>
             </div>
 
-            <PlaceholderImage
-              src={ASSET.diagram}
-              alt="Product diagram placeholder"
-              label="Optional: simple diagram. Suggest: 3-step flow (Upload → Ask → Conclusion). 1600x1200."
-              className="h-[360px]"
-            />
+            {/* WHY Card 2 */}
+            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm flex flex-col h-full">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
+                  <Icon name="shield" />
+                </div>
+                <div className="text-base font-medium text-neutral-900 line-clamp-2">
+                  It doesn’t stop at documentation
+                </div>
+              </div>
+              <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
+                The burden of holding context carries into issue spotting,
+                option generation, and decision support,
+                where the same context must persist across conversations.
+              </p>
+            </div>
+
+            {/* WHY Card 3 */}
+            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm flex flex-col h-full">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
+                  <Icon name="target" />
+                </div>
+                <div className="text-base font-medium text-neutral-900 line-clamp-2">
+                  There isn’t always someone to think with
+                </div>
+              </div>
+              <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
+                Responsibility often concentrates on one person,
+                or teams are stretched thin across multiple deals.
+                In both cases, meaningful back-and-forth is limited.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
+
+
+
 
       {/* How it works */}
       <section id="how" className="border-t border-neutral-200 bg-white">
@@ -364,8 +387,7 @@ export default function Page() {
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600">
                 Upload whatever document you already have.
-If needed, you can also start by describing the deal context in plain language.
-              </p>
+If needed, you can also start by describing the deal context in plain language              </p>
             </div>
 
             <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
@@ -376,7 +398,7 @@ If needed, you can also start by describing the deal context in plain language.
                 <div className="text-sm font-medium text-neutral-900">2. Chat</div>
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600">
-                Simply chat, discuss, ask questions, or assign NEX some tasks. After a break, NEX will stay in context so that you can resume where you left off.
+                Simply chat, discuss, ask questions, or assign NEX some tasks. After a break, NEX will stay in context so that you can resume where you left off
               </p>
             </div>
 
@@ -389,7 +411,7 @@ If needed, you can also start by describing the deal context in plain language.
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600">
                Use the output inside your actual documents and discussions.
-Edit it, challenge it, and apply it in the real world — where the decision still lives.
+Edit it, challenge it, and apply it in the real world — where the decision still lives
               </p>
             </div>
           </div>
@@ -411,47 +433,30 @@ Edit it, challenge it, and apply it in the real world — where the decision sti
             <div>
               <div className="text-xs uppercase tracking-widest text-neutral-500"></div>
               <h3 className="mt-3 text-3xl font-semibold tracking-tight text-neutral-900">
-                Decisions don’t need more words. They need clarity.
+                More time for work that actually matters
               </h3>
               <p className="mt-3 max-w-xl text-base leading-7 text-neutral-600">
-                If you want a conclusion-first AI that respects professional judgment, start here.
+                By holding deal context for you,
+NEX frees up time and attention —
+so you can focus on thinking clearly and delivering results you can stand behind
+
               </p>
               <p className="mt-6 text-xs text-neutral-500">
-                NEX supports judgment. It does not replace it.
-              </p>
+                              </p>
             </div>
 
             <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
               <div id="demo" className="text-sm font-medium text-neutral-900">Request a demo</div>
               <p className="mt-2 text-sm text-neutral-600">
-                Placeholder form. Wire it to your backend later.
               </p>
 
               <form className="mt-5 grid grid-cols-1 gap-3">
                 <label className="grid gap-1">
-                  <span className="text-xs text-neutral-600">Work email</span>
+                  <span className="text-xs text-neutral-600">Email</span>
                   <input
                     type="email"
-                    placeholder="you@company.com"
+                    placeholder="name@company.com"
                     className="h-11 rounded-xl border border-neutral-200 bg-white px-3 text-sm outline-none ring-neutral-300 focus:ring-2"
-                  />
-                </label>
-
-                <label className="grid gap-1">
-                  <span className="text-xs text-neutral-600">Role</span>
-                  <input
-                    type="text"
-                    placeholder="VP / Manager / Corp Dev / PE"
-                    className="h-11 rounded-xl border border-neutral-200 bg-white px-3 text-sm outline-none ring-neutral-300 focus:ring-2"
-                  />
-                </label>
-
-                <label className="grid gap-1">
-                  <span className="text-xs text-neutral-600">What do you want NEX to evaluate?</span>
-                  <textarea
-                    placeholder="Example: Provide a go/no-go recommendation based on these materials."
-                    rows={4}
-                    className="rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm outline-none ring-neutral-300 focus:ring-2"
                   />
                 </label>
 
@@ -462,31 +467,9 @@ Edit it, challenge it, and apply it in the real world — where the decision sti
                 >
                   Submit demo request
                 </button>
+         </form>
 
-                <div id="waitlist" className="mt-6 border-t border-neutral-200 pt-6">
-                  <div className="text-sm font-medium text-neutral-900">Join the waitlist</div>
-                  <p className="mt-2 text-sm text-neutral-600">If you prefer, we can notify you when access opens.</p>
-
-                  <div className="mt-3 flex gap-2">
-                    <input
-                      type="email"
-                      placeholder="you@company.com"
-                      className="h-11 w-full rounded-xl border border-neutral-200 bg-white px-3 text-sm outline-none ring-neutral-300 focus:ring-2"
-                    />
-                    <button
-                      type="button"
-                      className="inline-flex h-11 items-center justify-center rounded-xl border border-neutral-200 bg-white px-4 text-sm text-neutral-700 shadow-sm hover:bg-neutral-50"
-                      onClick={() => alert("Placeholder: connect this to your waitlist handler.")}
-                    >
-                      Join
-                    </button>
-                  </div>
-
-                  <div className="mt-3 text-[11px] text-neutral-500">
-                    Tip: replace alerts with server actions / API route (e.g. /api/lead) and store to Supabase.
-                  </div>
-                </div>
-              </form>
+     
             </div>
           </div>
         </div>

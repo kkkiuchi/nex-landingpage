@@ -170,11 +170,14 @@ export default function Page() {
             </div>
           </div>
 
-          <nav className="hidden items-center gap-6 text-sm text-neutral-600 md:flex">
-            <a href="#how" className="hover:text-neutral-900">How it works</a>
-            <a href="#why" className="hover:text-neutral-900">Why NEX</a>
-            <a href="#use-cases" className="hover:text-neutral-900">Use cases</a>
-          </nav>
+<nav className="hidden items-center gap-6 text-sm text-neutral-600 md:flex">
+  <a href="#top" className="hover:text-neutral-900">TOP</a>
+  <a href="#what" className="hover:text-neutral-900">WHAT</a>
+  <a href="#why" className="hover:text-neutral-900">WHY</a>
+  <a href="#how" className="hover:text-neutral-900">HOW</a>
+  <a href="#demo" className="hover:text-neutral-900">DEMO</a>
+</nav>
+
 
           <div className="flex items-center gap-2">
             <a
@@ -247,8 +250,8 @@ export default function Page() {
 
 
 
-      {/* Problem */}
-      <section className="border-t border-neutral-200 bg-white">
+      {/* What */}
+      <section id="what" className="border-t border-neutral-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <SectionTitle
             kicker="WHAT"
@@ -259,7 +262,7 @@ export default function Page() {
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
             <Card
               title="No need to babysit every time"
-              desc="NEX works differently than ChatGPT/Copilot. Based on the deal materials you choose to bring into the discussion — including financial models, docs, minutes, and URLs — NEX maintains context across them. No need to babysit your AI every single time you open a chat session"
+              desc="NEX works differently than ChatGPT/Copilot. Based on the materials you choose to bring in — including models, docs, minutes, and URLs — NEX maintains context across them. No need to babysit your AI every single time"
               icon={<Icon name="doc" />}
             />
             <Card
@@ -269,7 +272,7 @@ export default function Page() {
             />
             <Card
               title="Best assistant to test things first"
-              desc="Having been built on GPT-5.2, NEX is estimated to operate at the VP / Manager level. NEX answers any general or speciifc questions for your deal and pressure-test conclusions and ideas  — before conclusions or ideas are shared, formalized, or taken elsewhere"
+              desc="Having been built on GPT-5.2, NEX is estimated to operate at the VP / Manager level. NEX answers any questions for your deal and pressure-test conclusions and ideas  — before conclusions or ideas are taken elsewhere"
               icon={<Icon name="bolt" />}
             />
           </div>
@@ -281,24 +284,24 @@ export default function Page() {
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <SectionTitle
             kicker="WHY"
-            title="NEX stands next to your decision — not in place of it."
-            desc="Professional tone, decisive defaults, and strict separation between document facts and interpretation."
+            title="NEX takes off the cognitive load off you"
+            desc=""
           />
 
           <div className="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3">
             <Card
-              title="Decisive by default"
-              desc="Starts with a clear conclusion (Yes/No where applicable), then up to three reasons. No filler."
+              title="Let's face it, producing output while keeping in mind all the context drains the mind"
+              desc="M&A deliverables are not just about writing slides or documents. Each piece of work requires holding deal-specific assumptions, stakeholder positions, incentives, and unresolved questions at the same time. The effort is not mechanical — it is cognitive — and that load compounds late at night when decisions still need to be made."
               icon={<Icon name="bolt" />}
             />
             <Card
-              title="Document-grounded"
-              desc="References the relevant parts of your materials and clearly separates facts vs interpretation."
+              title="The same strain extends into thinking, analysis and decision making"
+              desc="The burden of holding onto context does not stop at documentation. It carries over into issue spotting, option generation, and decision support, where the same context must be preserved across conversations and iterations. As multiple deals run in parallel, the cost of keeping everything aligned increases rapidly, even for experienced teams."
               icon={<Icon name="shield" />}
             />
             <Card
-              title="Moves work forward"
-              desc="If inputs are insufficient, it states what cannot be concluded, what can, and what’s missing to proceed."
+              title="In practice, thinking often happens without, or little time with, a real human counterpart"
+              desc="Team structure and capability vary, but workload is a constant constraint. Sometimes responsibility concentrates on one experienced member. In other cases, capable teams are simply stretched thin across many deals. In both situations, there are frequent moments where meaningful back-and-forth is unavailable — and thinking proceeds without a true counterpart."
               icon={<Icon name="target" />}
             />
           </div>
@@ -347,8 +350,8 @@ export default function Page() {
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <SectionTitle
             kicker="HOW"
-            title="Three steps. No ceremony."
-            desc="Keep it simple. Make it repeatable."
+            title="Three steps"
+            desc=""
           />
 
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -357,10 +360,11 @@ export default function Page() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
                   <Icon name="steps" />
                 </div>
-                <div className="text-sm font-medium text-neutral-900">1. Upload documents</div>
+                <div className="text-sm font-medium text-neutral-900">1. Upload documents (or start from context)</div>
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600">
-                IM, financials, contracts, data room exports. Start with what you already have.
+                Upload whatever document you already have.
+If needed, you can also start by describing the deal context in plain language.
               </p>
             </div>
 
@@ -369,10 +373,10 @@ export default function Page() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
                   <Icon name="target" />
                 </div>
-                <div className="text-sm font-medium text-neutral-900">2. Ask decision questions</div>
+                <div className="text-sm font-medium text-neutral-900">2. Chat</div>
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600">
-                “Approve / deny?”, “Top risks?”, “What would block the deal?” — framed for action.
+                Simply chat, discuss, ask questions, or assign NEX some tasks. After a break, NEX will stay in context so that you can resume where you left off.
               </p>
             </div>
 
@@ -381,10 +385,11 @@ export default function Page() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
                   <Icon name="shield" />
                 </div>
-                <div className="text-sm font-medium text-neutral-900">3. Get defensible answers</div>
+                <div className="text-sm font-medium text-neutral-900">3. Go back to the real world</div>
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600">
-                Conclusion first. Then the minimum reasons required. Facts vs interpretation is explicit.
+               Use the output inside your actual documents and discussions.
+Edit it, challenge it, and apply it in the real world — where the decision still lives.
               </p>
             </div>
           </div>
@@ -490,11 +495,13 @@ export default function Page() {
       <footer className="border-t border-neutral-200 bg-white">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-10 text-sm text-neutral-600 sm:px-6 sm:flex-row sm:items-center sm:justify-between">
           <div>© {new Date().getFullYear()} NEX. All rights reserved.</div>
-          <div className="flex gap-4">
-            <a href="#how" className="hover:text-neutral-900">How it works</a>
-            <a href="#why" className="hover:text-neutral-900">Why NEX</a>
-            <a href="#demo" className="hover:text-neutral-900">Demo</a>
-          </div>
+<div className="flex gap-4">
+  <a href="#top" className="hover:text-neutral-900">TOP</a>
+  <a href="#what" className="hover:text-neutral-900">WHAT</a>
+  <a href="#why" className="hover:text-neutral-900">WHY</a>
+  <a href="#how" className="hover:text-neutral-900">HOW</a>
+  <a href="#demo" className="hover:text-neutral-900">DEMO</a>
+</div>
         </div>
       </footer>
     </main>

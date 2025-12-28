@@ -299,23 +299,12 @@ export default function Page() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 pb-14 pt-6 sm:px-6 lg:grid-cols-2 lg:items-stretch lg:pb-20 lg:pt-8">
           {/* Left */}
           <div className="relative flex h-full flex-col">
-            <div className="flex flex-wrap gap-2">
-              <Pill>#AlwaysInContext</Pill>
-              <Pill>#ContinuityFirst</Pill>
-              <Pill>#JudgmentStaysYours</Pill>
-            </div>
-
             <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-              NEX thinks through your deal with you, end to end — as a steady
-              counterpart
-            </h1>
+             NEX doesn’t make work faster by automating it. It makes work
+                faster by letting thinking continue seamlessly            </h1>
 
             <div className="mt-6 max-w-xl space-y-4 text-base leading-7 text-neutral-700">
-              <p>
-                NEX doesn’t make work faster by automating it. It makes work
-                faster by letting thinking continue seamlessly.
-              </p>
-              <p>
+               <p>
                 When deal context—prior information, assumptions, individual
                 reasoning, and technical knowledge—is fragmented, professionals
                 are forced to pause and reconstruct their thinking, creating
@@ -329,21 +318,6 @@ export default function Page() {
                 on-demand technical knowledge, while keeping full control of
                 judgment in the user’s hands.
               </p>
-            </div>
-
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <a
-                href="#demo"
-                className="inline-flex h-11 items-center justify-center rounded-xl bg-neutral-900 px-5 text-sm text-white shadow-sm hover:bg-neutral-800"
-              >
-                Request a demo
-              </a>
-              <a
-                href="#what"
-                className="inline-flex h-11 items-center justify-center rounded-xl border border-neutral-200 bg-white px-5 text-sm text-neutral-900 hover:bg-neutral-50"
-              >
-                See how it works
-              </a>
             </div>
 
             <div className="mt-4 text-xs text-neutral-500">

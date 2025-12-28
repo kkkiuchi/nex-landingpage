@@ -355,7 +355,7 @@ export default function Page() {
                 </div>
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
-                NEX works differently than ChatGPT/Copilot. Based on the materials you bring in — models, docs, minutes, and URLs — it keeps context across them.
+                NEX works differently than ChatGPT/Copilot. It keeps context across the materials you bring in — models, docs, and minutes.
               </p>
             </div>
 
@@ -370,7 +370,7 @@ export default function Page() {
                 </div>
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
-                With deal context maintained, there’s no need to switch sessions back and forth. Your recent work stays visible, with past context available when needed.
+                With deal context maintained, there’s no need to switch sessions back and forth. Recent work stays visible, with past context there when needed.
               </p>
             </div>
 

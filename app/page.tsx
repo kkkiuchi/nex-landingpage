@@ -320,10 +320,6 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="mt-4 text-xs text-neutral-500">
-              No hype. No decision-making claims. You stay in control.
-            </div>
-
             <div className="flex-1" />
           </div>
 
@@ -341,25 +337,29 @@ export default function Page() {
       {/* What */}
       <section id="what" className="border-t border-neutral-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <SectionTitle kicker="WHAT" title="AI assistant who stays in context" />
+          <SectionTitle
+            kicker="WHAT"
+            title="AI assistant who stays in context"
+            desc=""
+          />
 
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3 items-stretch">
+            {/* Card 1 */}
             <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm flex flex-col h-full">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
                   <Icon name="doc" />
                 </div>
                 <div className="text-base font-medium text-neutral-900 line-clamp-2">
-                  Stay in context across materials
+                  No need to babysit AI every time
                 </div>
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
-                NEX keeps deal context across the materials you bring in—docs,
-                models, minutes, and links—so you don’t restart from scratch each
-                time.
+                NEX works differently than ChatGPT/Copilot. Based on the materials you bring in — models, docs, minutes, and URLs — it keeps context across them.
               </p>
             </div>
 
+            {/* Card 2 */}
             <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm flex flex-col h-full">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
@@ -370,23 +370,22 @@ export default function Page() {
                 </div>
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
-                Work stays organized in one place. Recent work remains visible,
-                and prior context is there when you need it.
+                With deal context maintained, there’s no need to switch sessions back and forth. Your recent work stays visible, with past context available when needed.
               </p>
             </div>
 
+            {/* Card 3 */}
             <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm flex flex-col h-full">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
                   <Icon name="bolt" />
                 </div>
                 <div className="text-base font-medium text-neutral-900 line-clamp-2">
-                  Support clearer, more structured reasoning
+                  Pressure-test ideas before they travel
                 </div>
               </div>
               <p className="mt-3 text-sm leading-6 text-neutral-600 line-clamp-4">
-                Use NEX to sense-check assumptions, explore options, and keep the
-                deal thread consistent—while judgment stays yours.
+                Ask deal questions and test conclusions early. NEX helps you pressure-test reasoning before it’s taken into docs, meetings, or recommendations.
               </p>
             </div>
           </div>

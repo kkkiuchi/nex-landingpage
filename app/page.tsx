@@ -324,7 +324,8 @@ export default function Page() {
           </div>
 
           {/* Right */}
-          <div className="relative flex h-full items-end">
+          {/* Right */}
+          <div className="relative flex h-full items-start">
             <img
               src="/lp-hero.jpg"
               alt="NEX hero visual"
@@ -513,7 +514,7 @@ export default function Page() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
             <div>
               <h3 className="mt-3 text-3xl font-semibold tracking-tight text-neutral-900">
-                More time for work that actually matters
+                More time for work that actually matters — because your thinking doesn’t keep stopping.
               </h3>
               <p className="mt-3 max-w-xl text-base leading-7 text-neutral-600">
                 By retaining deal context, NEX reduces cognitive overhead—so you

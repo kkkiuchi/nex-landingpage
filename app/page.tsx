@@ -325,9 +325,9 @@ export default function Page() {
 
           {/* Right */}
           {/* Right */}
-          <div className="relative flex h-full items-start justify-center">
+         <div className="relative flex h-full items-start">
             <img
-              src="/lp-hero.jpg"
+              src="/lp-hero2.png"
               alt="NEX hero visual"
               className="h-auto w-full rounded-2xl object-cover"
             />

@@ -9,9 +9,18 @@ function isValidEmail(email: string) {
 
 export async function POST(req: Request) {
   // LP段階：環境変数が無ければダミーで成功返す
-  if (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
-    return NextResponse.json({ ok: true });
-  }
+if (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+  return NextResponse.json(
+    { ok: false, error: "Server env missing" },
+    { status: 500 }
+  );
+}
+
+console.log("[lead] env", {
+  hasUrl: !!process.env.SUPABASE_URL,
+  hasKey: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
+});
+
 
   // 本実装（環境変数がある時だけ）
   const { createClient } = await import("@supabase/supabase-js");

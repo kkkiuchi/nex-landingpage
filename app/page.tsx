@@ -326,11 +326,11 @@ export default function Page() {
           {/* Right */}
           {/* Right */}
          <div className="relative flex h-full items-start">
-            <img
-              src="/lp-hero2.png"
-              alt="NEX hero visual"
-              className="h-auto w-full rounded-2xl object-cover"
-            />
+          <img
+            src="/lp-hero2.png"
+            alt="NEX hero visual"
+            className="h-auto w-full rounded-2xl object-cover"
+          />
           </div>
         </div>
       </section>
@@ -532,6 +532,8 @@ export default function Page() {
                 className="mt-5 grid grid-cols-1 gap-3"
                 onSubmit={async (e) => {
                   e.preventDefault();
+                  console.log("[lead] submit start", demoEmail);
+
                   setDemoStatus("sending");
                   setDemoError("");
 
@@ -539,19 +541,29 @@ export default function Page() {
                     const res = await fetch("/api/lead", {
                       method: "POST",
                       headers: { "Content-Type": "application/json" },
-                      body: JSON.stringify({ email: demoEmail }),
+                      body: JSON.stringify({ email: demoEmail, source: "lp_demo" }),
                     });
 
-                    const data = await res.json();
-                    if (!res.ok || !data.ok)
-                      throw new Error(data?.error || "Request failed");
+                    console.log("[lead] response status", res.status);
+
+                    const text = await res.text();
+                    console.log("[lead] response body", text);
+
+                    let data: any = {};
+                    try { data = JSON.parse(text); } catch {}
+
+                    if (!res.ok || !data.ok) {
+                      throw new Error(data?.error || `Request failed (${res.status})`);
+                    }
 
                     setDemoStatus("sent");
                   } catch (err: any) {
+                    console.error("[lead] error", err);
                     setDemoStatus("error");
                     setDemoError(err?.message ?? "Failed to submit");
                   }
                 }}
+
               >
                 <label className="grid gap-1">
                   <span className="text-xs text-neutral-600">Email</span>
